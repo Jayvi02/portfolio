@@ -8,7 +8,7 @@ export default function About() {
     'UI/UX Design',
     'Digital Art',
     'Photography',
-    'Video Editing',
+    'Photo Editing',
     'Graphic Design'
   ];
 
@@ -30,30 +30,31 @@ export default function About() {
             
             <div className="text-lg text-gray-600 dark:text-gray-300 space-y-4">
               <p>
-                I'm a creative developer and digital artist with a passion for crafting 
+                I'm a digital artist and creative developer with a passion for creating 
                 beautiful, functional, and user-centered digital experiences. My journey 
                 spans across web development, digital art, and creative technology.
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring new design trends, 
-                experimenting with digital art techniques, or working on personal 
-                creative projects that push the boundaries of what's possible.
+                I work mostly on digital arts with CSP and PS. Currently learning
+                Blender for 3D modeling and animation, and ZBrush for sculpting.
+                Eager to learn new things everyday, currently learning DaVinci
+                Resolve for video editing as well.
+              </p>
+              <p>
+                Currently pursuing a BSc(hons) IT in Interactive Media at SLIIT, 
+                my goal is to contribute my creative vision and technical skills to 
+                the game industry as a game developer or digital artist.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <a 
-                href="#" 
+                href="/CV- Jayavi.pdf" 
+                download="Jayavi_CV.pdf"
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
                 Download Resume
-              </a>
-              <a 
-                href="#contact" 
-                className="px-6 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 hover:scale-105 transition-all duration-300"
-              >
-                Let's Talk
               </a>
             </div>
           </div>
@@ -71,21 +72,6 @@ export default function About() {
                     <span className="text-gray-700 dark:text-gray-300 font-medium">{skill}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 rounded-xl">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
-                <div className="text-gray-600 dark:text-gray-400">Projects</div>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900 dark:to-pink-900 rounded-xl">
-                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">3+</div>
-                <div className="text-gray-600 dark:text-gray-400">Years Exp</div>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-pink-50 to-blue-50 dark:from-pink-900 dark:to-blue-900 rounded-xl">
-                <div className="text-3xl font-bold text-pink-600 dark:text-pink-400 mb-2">100%</div>
-                <div className="text-gray-600 dark:text-gray-400">Dedication</div>
               </div>
             </div>
           </div>

@@ -63,19 +63,6 @@ export default function Hero() {
         
         {/* Left Content */}
         <div className="space-y-8">
-          {/* New Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center"
-          >
-            <span className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 text-xs font-medium text-white/90 flex items-center">
-              <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-              Latest integration just arrived
-            </span>
-          </motion.div>
-
           {/* Main Headline */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -83,10 +70,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-4"
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Creative Developer
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="font-orpheus text-white">Creative Developer</span>
               <br />
-              <span className="text-gray-400">& Digital Artist</span>
+              <span className="text-gray-400">& </span>
+              <span className="font-orpheus italic text-yellow-400">Digital Artist</span>
             </h1>
           </motion.div>
 
@@ -106,8 +94,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <button className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-lg font-medium hover:bg-white/20 hover:border-white/30 transition-all duration-300">
-              View My Work
+            <button className="relative bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-lg font-medium hover:bg-white/20 hover:border-white/30 transition-all duration-300 group overflow-hidden">
+              <span className="relative z-10">View My Work</span>
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-purple-400/0 to-pink-400/0 group-hover:from-blue-400/20 group-hover:via-purple-400/20 group-hover:to-pink-400/20 transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-purple-400/0 to-pink-400/0 group-hover:from-blue-400/10 group-hover:via-purple-400/10 group-hover:to-pink-400/10 blur-xl transition-all duration-300"></div>
             </button>
           </motion.div>
         </div>
