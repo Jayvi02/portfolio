@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export default function Arts() {
@@ -439,14 +440,14 @@ export default function Arts() {
                 Interested in commissioning artwork?
               </h3>
               <p className="text-white/90 mb-6 drop-shadow-md">
-                I'm available for digital art commissions including character designs, portraits, and fantasy artwork.
+                I&apos;m available for digital art commissions including character designs, portraits, and fantasy artwork.
               </p>
-              <a
+              <Link
                 href="/#contact"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-cyan-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-cyan-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
