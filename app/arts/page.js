@@ -14,15 +14,15 @@ export default function Arts() {
         id: 1,
         title: "Beast Titan",
         image: "/art/beast titan.png",
-        description: "Digital artwork featuring the Beast Titan character",
+        description: "Digital artwork featuring the Beast Titan from Attack on Titan",
         medium: "Digital Art",
-        year: "2024"
+        year: "2025"
       },
       {
         id: 2,
-        title: "Caraxes and Daemon",
+        title: "Caraxes The Blood Wyrm",
         image: "/art/caraxes and daemon.jpg",
-        description: "Fantasy artwork depicting Caraxes and Daemon",
+        description: "Caraxes from House of the Dragon",
         medium: "Digital Art",
         year: "2024"
       },
@@ -30,7 +30,7 @@ export default function Arts() {
         id: 3,
         title: "Short Hair Portrait",
         image: "/art/shrthair.png",
-        description: "Character portrait with short hair styling",
+        description: "Character portrait with short hair",
         medium: "Digital Art",
         year: "2024"
       },
@@ -38,39 +38,39 @@ export default function Arts() {
         id: 4,
         title: "2B",
         image: "/art/2b.png",
-        description: "NieR: Automata character artwork",
+        description: "2B from NieR: Automata",
         medium: "Digital Art",
         year: "2024"
       },
       {
         id: 5,
-        title: "Ada",
+        title: "Ada Wong",
         image: "/art/ada.png",
-        description: "Character portrait artwork",
+        description: "Ada Wong from Resident Evil",
         medium: "Digital Art",
-        year: "2024"
+        year: "2025"
       },
       {
         id: 6,
         title: "Atreides",
         image: "/art/atreides1.jpg",
-        description: "Dune-inspired character artwork",
+        description: "Paul Atreides from Dune",
         medium: "Digital Art",
-        year: "2024"
+        year: "2023"
       },
       {
         id: 7,
         title: "Ciri",
         image: "/art/ciri 2.jpg",
-        description: "The Witcher character artwork",
+        description: "Ciri from The Witcher III",
         medium: "Digital Art",
         year: "2024"
       },
       {
         id: 8,
-        title: "Ney",
+        title: "Neymar Jr",
         image: "/art/ney.png",
-        description: "Original character design",
+        description: "Neymar in Brazil jersey",
         medium: "Digital Art",
         year: "2024"
       },
@@ -78,9 +78,9 @@ export default function Arts() {
         id: 9,
         title: "Rei",
         image: "/art/rei.png",
-        description: "Evangelion character artwork",
+        description: "Rei Ayanami from Neon Genesis Evangelion",
         medium: "Digital Art",
-        year: "2024"
+        year: "2025"
       }
     ],
     concepts: [
@@ -94,33 +94,33 @@ export default function Arts() {
       },
       {
         id: 11,
-        title: "Abstract Design",
+        title: "Tavern",
         image: "/art/concept art/bla bla1.png",
-        description: "Abstract concept design",
+        description: "Tavern concept art",
         medium: "Concept Art",
-        year: "2024"
+        year: "2025"
       },
       {
         id: 12,
-        title: "Boat Concept",
+        title: "The Lake",
         image: "/art/concept art/boat.png",
-        description: "Marine vessel concept design",
+        description: "Art of a Lake with boats",
         medium: "Concept Art",
         year: "2024"
       },
       {
         id: 13,
-        title: "G5 Design",
+        title: "Sun God",
         image: "/art/concept art/g5.jpg",
-        description: "G5 concept artwork",
+        description: "Sun God Nika from One Piece",
         medium: "Concept Art",
-        year: "2024"
+        year: "2025"
       },
       {
         id: 14,
-        title: "Gandhi Portrait",
+        title: "Nasjuro",
         image: "/art/concept art/gandhi1.png",
-        description: "Conceptual Gandhi portrait",
+        description: "Ethanbaron V. Nasjuro from One Piece",
         medium: "Concept Art",
         year: "2024"
       },
@@ -134,9 +134,9 @@ export default function Arts() {
       },
       {
         id: 16,
-        title: "Sung Character",
+        title: "Shadow Monarch",
         image: "/art/concept art/sung.png",
-        description: "Character concept design",
+        description: "Sung Jinwoo from Solo Leveling",
         medium: "Concept Art",
         year: "2024"
       }
@@ -144,19 +144,19 @@ export default function Arts() {
     sketches: [
       {
         id: 17,
-        title: "Study Sketch",
+        title: "Indoraptor",
         image: "/art/sketch/1234.png",
-        description: "Practice sketch study",
+        description: "Indoraptor from Jurassic World Sketch",
         medium: "Sketch",
         year: "2024"
       },
       {
         id: 18,
-        title: "Character Sketch",
+        title: "Game Architectural designs",
         image: "/art/sketch/ca1.png",
-        description: "Character anatomy sketch",
+        description: "Fantasy building designs",
         medium: "Sketch",
-        year: "2024"
+        year: "2025"
       },
       {
         id: 19,
@@ -170,7 +170,7 @@ export default function Arts() {
         id: 20,
         title: "Sketch Study 1",
         image: "/art/sketch/sketching111.png",
-        description: "Figure sketching practice",
+        description: "Choosen ones",
         medium: "Sketch",
         year: "2024"
       },
@@ -178,15 +178,15 @@ export default function Arts() {
         id: 21,
         title: "Sketch Study 2",
         image: "/art/sketch/sketching2222.png",
-        description: "Advanced sketching technique",
+        description: "Targaryens",
         medium: "Sketch",
         year: "2024"
       },
       {
         id: 22,
-        title: "Wolf Sketch",
+        title: "Wolf x Eagle Sketch",
         image: "/art/sketch/wlfyy.png",
-        description: "Animal study sketch",
+        description: "Concept Animal study sketch",
         medium: "Sketch",
         year: "2024"
       }

@@ -31,7 +31,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-transparent flex items-center overflow-hidden">
       {/* Particle Background */}
       <div className="absolute inset-0 overflow-hidden">
         {particles.map((particle) => (
@@ -71,7 +71,7 @@ export default function Hero() {
             className="space-y-4"
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="font-orpheus text-white">Creative Developer</span>
+              <span className="font-bokorfont text-white tracking-tighter">Creative Developer</span>
               <br />
               <span className="text-gray-400">& </span>
               <span className="font-orpheus italic text-yellow-400">Digital Artist</span>

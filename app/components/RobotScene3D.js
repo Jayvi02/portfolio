@@ -9,6 +9,18 @@ function SolarSystem() {
   const systemRef = useRef();
   const planetsRef = useRef([]);
   const ringsRef = useRef([]);
+  
+  // Initialize random starting angles for scattered positions
+  const startingAngles = useRef([
+    Math.random() * Math.PI * 2, // Mercury
+    Math.random() * Math.PI * 2, // Venus
+    Math.random() * Math.PI * 2, // Earth
+    Math.random() * Math.PI * 2, // Mars
+    Math.random() * Math.PI * 2, // Jupiter
+    Math.random() * Math.PI * 2, // Saturn
+    Math.random() * Math.PI * 2, // Uranus
+    Math.random() * Math.PI * 2, // Neptune
+  ]);
 
   useFrame(({ clock }) => {
     const time = clock.elapsedTime;
@@ -23,8 +35,9 @@ function SolarSystem() {
       if (planet) {
         const speed = 0.15 + i * 0.1; // Much slower, more realistic speeds
         const radius = 2 + i * 1.8; // More spacing between planets
-        planet.position.x = Math.cos(time * speed) * radius;
-        planet.position.z = Math.sin(time * speed) * radius;
+        const angle = startingAngles.current[i] + time * speed; // Start from random angle
+        planet.position.x = Math.cos(angle) * radius;
+        planet.position.z = Math.sin(angle) * radius;
         planet.rotation.y = time * (0.5 + i * 0.15); // Slower rotation
       }
     });

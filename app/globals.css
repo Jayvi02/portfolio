@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Azonix:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orpheus+Pro:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --background: #0f172a;
@@ -132,25 +133,25 @@ html {
   background: rgba(59, 130, 246, 0.3);
 }
 
-/* Custom Pixelated Cursor */
-* {
-  cursor: url('/cursors.png') 0 0, auto !important;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-}
-
+/* Custom Pixelated Cursor - Optimized */
 body {
-  cursor: url('/cursors.png') 0 0, auto !important;
+  cursor: url('/cursors.png') 0 0, auto;
 }
 
-/* Interactive elements hover effect */
+/* Only apply custom cursor to interactive elements */
 a, button, [role="button"], .cursor-pointer {
-  cursor: url('/cursors.png') 0 0, pointer !important;
+  cursor: url('/cursors.png') 0 0, pointer;
 }
 
 a:hover, button:hover, [role="button"]:hover {
-  cursor: url('/cursors.png') 0 0, pointer !important;
+  cursor: url('/cursors.png') 0 0, pointer;
+}
+
+/* Remove global image-rendering for better performance */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 /* Rainbow Matrix Background */
@@ -233,13 +234,14 @@ a:hover, button:hover, [role="button"]:hover {
   }
 }
 
-/* App Ticker Animations */
+/* App Ticker Animations - Optimized */
 .ticker-row {
   display: flex;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
   height: 80px;
+  will-change: auto;
 }
 
 .ticker-content {
@@ -249,6 +251,7 @@ a:hover, button:hover, [role="button"]:hover {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   width: calc(200% + 64px);
+  will-change: transform;
 }
 
 .ticker-right .ticker-content {
@@ -272,9 +275,10 @@ a:hover, button:hover, [role="button"]:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 12px 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   white-space: nowrap;
   min-width: 180px;
+  will-change: transform;
 }
 
 .app-logo-box:hover {
@@ -317,14 +321,15 @@ a:hover, button:hover, [role="button"]:hover {
   }
 }
 
-/* Art Image Effects */
+/* Art Image Effects - Optimized */
 .art-image {
-  transition: all 0.4s ease;
-  filter: grayscale(100%) !important;
+  transition: filter 0.4s ease;
+  filter: grayscale(100%);
+  will-change: filter;
 }
 
 .art-card:hover .art-image {
-  filter: grayscale(0%) !important;
+  filter: grayscale(0%);
 }
 
 .star-button {
@@ -342,8 +347,9 @@ a:hover, button:hover, [role="button"]:hover {
   justify-content: center;
   opacity: 0;
   transform: scale(0.8);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+  will-change: opacity, transform;
 }
 
 .art-card:hover .star-button {
@@ -362,7 +368,7 @@ a:hover, button:hover, [role="button"]:hover {
   fill: none;
   stroke: rgba(255, 255, 255, 0.8);
   stroke-width: 2;
-  transition: all 0.3s ease;
+  transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
 .star-button.starred .star-icon {
@@ -383,7 +389,8 @@ a:hover, button:hover, [role="button"]:hover {
   font-weight: 600;
   opacity: 0;
   transform: translateY(10px);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
 }
 
 .art-card:hover .star-count {
@@ -398,4 +405,11 @@ a:hover, button:hover, [role="button"]:hover {
 
 .font-orpheus {
   font-family: 'Orpheus Pro', serif;
+}
+
+.font-bokorfont {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: none;
 }
